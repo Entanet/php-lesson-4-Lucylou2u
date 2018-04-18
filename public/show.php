@@ -20,28 +20,28 @@ $books= $p->show($id)
     <table class="u-full-width">
         <tbody>
         <tr>
-            <th>booktitle</th>
-            <td><?= $books->booktitle ?></td>
+            <th>BookTitle</th>
+            <td><?= $books->BookTitle ?></td>
         </tr>
         <tr>
-            <th>author</th>
-            <td><?= $books->author ?></td>
+            <th>Author</th>
+            <td><?= $books->Author ?></td>
         </tr>
         <tr>
-            <th>category</th>
-            <td><?= $books->category ?></td>
+            <th>Category</th>
+            <td><?= $books->Category ?></td>
         </tr>
         <tr>
-            <th>releasedate</th>
-            <td><?= $books->releasedate ?></td>
+            <th>Published</th>
+            <td><?= $books->Published ?></td>
         </tr>
         <tr>
-            <th>rating</th>
-            <td><?= $books->rating ?></td>
+            <th>Rating</th>
+            <td><?= $books->Rating ?></td>
         </tr>
         <tr>
-            <th>comments</th>
-            <td><?= $books->comments ?></td>
+            <th>Comments</th>
+            <td><?= $books->Comments ?></td>
         </tr>
         
         </tbody>
