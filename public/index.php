@@ -1,7 +1,7 @@
 <?php
 require '../app/books.php';
 $b = new books();
-$booktitle= $b->all();
+$BookTitle= $b->all();
 ?>
 
 <html>
@@ -14,15 +14,15 @@ $booktitle= $b->all();
 	<table class="u-full-width">
         <tbody>
         	<tr>
-			<th>booktitle</th>
+			<th>BookTitle</th>
         	</tr>
 		
 <?php
-foreach($My_Library-> as $booktitle){
+foreach($Book_Library-> as $BookTitle){
 ?>
 		<tr>
-			<td><?= $booktitle->booktitle ?></td>
-			<td><a href="/show.php?id=<?= $booktitle->id ?>">View</a></td>
+			<td><?= $BookTitle->BookTitle ?></td>
+			<td><a href="/show.php?id=<?= $BookTitle->id ?>">View</a></td>
 		</tr>
 <?php
 }
