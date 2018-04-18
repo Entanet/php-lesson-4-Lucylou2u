@@ -1,6 +1,6 @@
  <?php
 
- class Book_Library
+ class Books
  {
     public $BookTitle;
     public $Author;
