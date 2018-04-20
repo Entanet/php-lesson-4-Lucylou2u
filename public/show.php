@@ -6,8 +6,8 @@
 
 <?php
 $id = $_GET['id'];
-require '../app/books.php';
-$p = new books();
+require '../app/Books.php';
+$p = new Books();
 $books= $p->show($id)
 
 
