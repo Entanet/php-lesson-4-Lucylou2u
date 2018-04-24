@@ -7,41 +7,41 @@
 <?php
 $id = $_GET['id'];
 require '../app/Books.php';
-$p = new Books();
-$books= $p->show($id)
+$b = new books();
+$books= $b->show($id)
 
 
 ?>
 
 <body>
 
-    <h1>Profile #<?= $books->id ?></h1>
+    <h1>Profile #<?= $Books->id ?></h1>
 
     <table class="u-full-width">
         <tbody>
         <tr>
-            <th>BookTitle</th>
-            <td><?= $books->BookTitle ?></td>
+            <th>bookTitle</th>
+            <td><?= $books->bookTitle ?></td>
         </tr>
         <tr>
-            <th>Author</th>
-            <td><?= $books->Author ?></td>
+            <th>author</th>
+            <td><?= $books->author ?></td>
         </tr>
         <tr>
-            <th>Category</th>
-            <td><?= $books->Category ?></td>
+            <th>category</th>
+            <td><?= $books->category ?></td>
         </tr>
         <tr>
-            <th>Published</th>
-            <td><?= $books->Published ?></td>
+            <th>published</th>
+            <td><?= $books->published ?></td>
         </tr>
         <tr>
-            <th>Rating</th>
-            <td><?= $books->Rating ?></td>
+            <th>rating</th>
+            <td><?= $books->rating ?></td>
         </tr>
         <tr>
-            <th>Comments</th>
-            <td><?= $books->Comments ?></td>
+            <th>comments</th>
+            <td><?= $books->comments ?></td>
         </tr>
         
         </tbody>
