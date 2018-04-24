@@ -2,12 +2,12 @@
 
  class Books
  {
-    public $BookTitle;
-    public $Author;
-    public $Category;
-    public $Published;
-    public $Rating;
-    public $Comments;  
+    public $bookTitle;
+    public $author;
+    public $category;
+    public $published;
+    public $rating;
+    public $comments;  
 
     public function __construct()
     {
@@ -16,17 +16,17 @@
 
     public function show($id)
     {
-        $stmt = $this->connection->prepare('SELECT * FROM books WHERE id = ?');
+        $stmt = $this->connection->prepare('SELECT * FROM book_library WHERE id = ?');
         $stmt->execute([$id]);
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $result = $stmt->fetchAll()[0];
 
 
-        $this->BookTitle = $result['BookTitle'];
-        $this->Author = $result['Author'];
-        $this->Category = $result['Category'];
-        $this->Releasedate = $result['Published'];
-        $this->Rating = $result['Rating']
+        $this->bookTitle = $result['book_title'];
+        $this->author = $result['author'];
+        $this->category = $result['category'];
+        $this->published = $result['published'];
+        $this->rating = $result['rating']
         
 
 
@@ -35,19 +35,19 @@
 
     public function all()
     {
-        $stmt = $this->connection->query('SELECT * FROM Book_Library'); 
+        $stmt = $this->connection->query('SELECT * FROM book_library'); 
         $stmt->execute();
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $rows = $stmt->fetchAll();
         
         foreach($rows as $result){
-           $BookTitle = new BookTitle(); 
-           $BookTitle->name = $result['BookTitle'];
-           $BookTitle->ID = $result['ID'];
-           $Book_Library[] = $books; 
+           $bookTitle = new bookTitle(); 
+           $booktitle->name = $result['book_title'];
+           $booktitle->id = $result['id'];
+           $book_library[] = $Books; 
         }
 
-        return $Book_Library;       
+        return $book_library;       
     }
  }
 
