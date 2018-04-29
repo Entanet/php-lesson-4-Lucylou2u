@@ -15,7 +15,7 @@ $books= $b->show($id)
 
 <body>
 
-    <h1>Profile #<?= $Books->id ?></h1>
+    <h1>Profile #<?= $books->id ?></h1>
 
     <table class="u-full-width">
         <tbody>
