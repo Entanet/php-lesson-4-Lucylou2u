@@ -41,10 +41,10 @@
         $rows = $stmt->fetchAll();
         
         foreach($rows as $result){
-           $bookTitle = new bookTitle(); 
+           $bookTitle = new Books(); 
            $booktitle->name = $result['book_title'];
            $booktitle->id = $result['id'];
-           $book_library[] = $Books; 
+           $book_library[] = $bookTitle; 
         }
 
         return $book_library;       
