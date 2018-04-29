@@ -21,8 +21,8 @@ $bookTitles= $b->all();
 foreach($bookTitles as $book){
 ?>
 		<tr>
-			<td><?= $bookTitle->bookTitle ?></td>
-			<td><a href="/show.php?id=<?= $bookTitle->id ?>">View</a></td>
+			<td><?= $book->name ?></td>
+			<td><a href="/show.php?id=<?= $book->id ?>">View</a></td>
 		</tr>
 <?php
 }
