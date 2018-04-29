@@ -18,7 +18,7 @@ $bookTitle= $b->all();
         	</tr>
 		
 <?php
-foreach($book_library-> as $book){
+foreach($book_library as $book){
 ?>
 		<tr>
 			<td><?= $bookTitle->bookTitle ?></td>
