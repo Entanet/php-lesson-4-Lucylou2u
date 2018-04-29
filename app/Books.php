@@ -26,7 +26,7 @@
         $this->author = $result['author'];
         $this->category = $result['category'];
         $this->published = $result['published'];
-        $this->rating = $result['rating']
+        $this->rating = $result['rating'];
         
 
 
