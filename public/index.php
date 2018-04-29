@@ -1,6 +1,6 @@
 <?php
 require '../app/Books.php';
-$b = new books();
+$b = new Books();
 $bookTitle= $b->all();
 ?>
 
