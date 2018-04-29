@@ -42,8 +42,8 @@
         
         foreach($rows as $result){
            $bookTitle = new Books(); 
-           $booktitle->name = $result['book_title'];
-           $booktitle->id = $result['id'];
+           $bookTitle->name = $result['book_title'];
+           $bookTitle->id = $result['id'];
            $book_library[] = $bookTitle; 
         }
 
